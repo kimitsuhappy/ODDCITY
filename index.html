@@ -1,93 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>How to Create An Image Slider With Pure CSS3</title>
-  <link href="images.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style type="text/css">
-    body {
-      background-color: aquamarine;
-    }
-
-    h1 {
-      font: bold 35px/60px Helvetica, Arial, Sans-serif;
-      text-align: center;
-      color: #eee;
-      text-shadow: 0px 2px 6px #333;
-    }
-
-    #images {
-      width: 750px;
-      height: 500px;
-      overflow: hidden;
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background-image:
+        url(./img/超商\(有樹\)_5100x2480.png);
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       position: relative;
-      margin: 20px auto;
     }
 
-    #images img {
-      width: 750px;
-      height: 500px;
+
+
+
+
+    .right {
+      width: 100px;
+      height: auto;
       position: absolute;
-      top: 0;
-      left: -400px;
-      z-index: 1;
-      opacity: 1;
-      transition: all linear 500ms;
-      -o-transition: all linear 500ms;
-      -moz-transition: all linear 500ms;
-      -webkit-transition: all linear 500ms;
+      top: 50%;
+      right: 0px;
     }
 
-    #images img:target {
-      left: 0;
-      z-index: 9;
-      opacity: 1;
+    .dog {
+      width: 4%;
+      height: auto;
+      position: absolute;
+      bottom: 10%;
+      left: 20%;
     }
 
-    #images img:first-child {
-      left: 0;
+    .walker {
+      width: 12%;
+      height: auto;
+      position: absolute;
+      bottom: 10%;
+      left: 30%;
     }
 
-    #slider {
-      width: 200px;
-      height: 30px;
-      margin: 20px auto;
+    .cat {
+      width: 4%;
+      height: auto;
+      position: absolute;
+      bottom: 24%;
+      right: 22%;
     }
 
-    #slider a {
-      text-decoration: none;
-      background: #45b97c;
-      border: 1px solid #C6E4F2;
-      padding: 4px 6px;
-      color: #222;
-      margin: 20px auto;
+    .win {
+      width: 24%;
+      height: auto;
+      position: absolute;
+      top: 26.5%;
+      right: 29%;
     }
 
-    #slider a:hover {
-      background: #C6E4F2;
+    .win:hover {
+      transform: scale(1.1);
+    }
+
+    .win1f {
+      width: 27.5%;
+      height: auto;
+      position: absolute;
+      bottom: 9.4%;
+      right: 27%;
+    }
+
+    .win1f:hover {
+      transform: scale(1.1);
     }
   </style>
 </head>
 
 <body>
-  <h1>CSS3 Image Slider</h1>
-  <div id="images">
-    <a href="./store.html"><img id="image1" src="./img/bgcv1.jpg" /></a>
-    <a href="./home.html"><img id="image2" src="./img/home.jpg" /></a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id="image3" src="./img/COMING SOON.png" /></a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id="image4" src="./img/COMING SOON.png" /></a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id="image5" src="./img/COMING SOON.png" /></a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img id="image6" src="./img/COMING SOON.png" /></a>
+  <div class="banner">
+
   </div>
-  <div id="slider">
-    <a href="#image1">1</a>
-    <a href="#image2">2</a>
-    <a href="#image3">3</a>
-    <a href="#image4">4</a>
-    <a href="#image5">5</a>
-    <a href="#image6">6</a>
-  </div>
+  <div><a href="./house.html"><img class="right" src="./img/場景轉換箭頭_右.png" alt=""></a></div>
+  <div><img class="dog" src="./img/狗1.gif" alt=""></div>
+  <div><img class="walker" src="./img/路人1來回渡步.gif" alt=""></div>
+  <div><img class="cat" src="./img/貓2.gif" alt=""></div>
+  <div><a href="./con2.html"><img class="win" src="./img/windos.jpg" alt=""> </a> </div>
+  <div><a href="./con1f.html"><img class="win1f" src="./img/windos1f.jpg" alt=""> </a> </div>
+
+
+
 </body>
 
 </html>
